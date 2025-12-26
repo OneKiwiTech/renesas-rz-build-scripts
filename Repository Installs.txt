@@ -1,0 +1,53 @@
+Please use the commands below to download the correct repository for building.
+
+---------------------------------------------------
+Github Repository Wiki pages
+---------------------------------------------------
+Refer to the wiki page of each github repository to find out what branch to clone.
+
+For each MPU, there are different branches.
+
+It is recommended to use the latest software versions.
+
+https://github.com/renesas-rz/rzg2_flash_writer/wiki
+https://github.com/renesas-rz/rzg_trusted-firmware-a/wiki
+https://github.com/renesas-rz/renesas-u-boot-cip/wiki
+https://github.com/renesas-rz/rz_linux-cip/wiki
+
+
+---------------------------------------------------
+Example:
+   RZ/V2L BSP v3.0.6
+---------------------------------------------------
+$ git clone https://github.com/renesas-rz/rzg2_flash_writer.git -b rz_g2l
+$ git clone https://github.com/OneKiwiTech/renesas-rz-tfa.git -b v2l-bsp-3.0.6
+$ git clone https://github.com/OneKiwiTech/renesas-rz-uboot.git -b v2l-bsp-3.0.6
+$ git clone https://github.com/OneKiwiTech/renesas-rz-linux.git -b v2l-bsp-3.0.6
+
+---------------------------------------------------
+Example:
+   RZ/V2L BSP v3.0.7
+---------------------------------------------------
+$ git clone https://github.com/renesas-rz/rzg2_flash_writer.git -b rz_g2l
+$ git clone https://github.com/OneKiwiTech/renesas-rz-tfa.git -b v2l-bsp-3.0.7
+$ git clone https://github.com/OneKiwiTech/renesas-rz-uboot.git -b v2l-bsp-3.0.7
+$ git clone https://github.com/OneKiwiTech/renesas-rz-linux.git -b v2l-bsp-3.0.7
+
+---------------------------------------------------
+Example:
+   RZ/V2H SDK v5.20
+-----------------------------------------------------
+ (no flash writer code)
+$ git clone https://github.com/OneKiwiTech/renesas-rz-tfa.git -b v2h-sdk-v5.20
+$ git clone https://github.com/OneKiwiTech/renesas-rz-uboot.git -b v2h-sdk-v5.20
+$ git clone https://github.com/OneKiwiTech/renesas-rz-linux.git -b v2h-sdk-v5.20
+
+---------------------------------------------------
+mbed
+---------------------------------------------------
+The MbedTLS code was needed to build Trusted Firmware-A up to version v2.8
+Starting with TF-A v2.9, MbedTLS is no longer needed.
+So if you are building old code (before 2023), you might need this.
+
+$ git --branch mbedtls-2.28.1 clone https://github.com/ARMmbed/mbedtls.git
+

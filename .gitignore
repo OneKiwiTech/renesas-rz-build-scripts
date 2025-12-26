@@ -1,0 +1,6 @@
+output_*
+board.ini
+.vscode/
+renesas-rz-tfa/
+renesas-rz-uboot/
+renesas-rz-linux/
