@@ -44,6 +44,11 @@ OUT_DIR=output_${MACHINE}
 TFA_FIP=0
 MPU=RZG2L
 
+if [ ! -d "gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf" ]; then
+  wget https://developer.arm.com/-/media/Files/downloads/gnu-a/10.3-2021.07/binrel/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf.tar.xz
+  tar xvf gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf.tar.xz
+  rm gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf.tar.xz
+fi
 
 # Read in functions from build_common.sh
 if [ ! -e build_common.sh ] ; then

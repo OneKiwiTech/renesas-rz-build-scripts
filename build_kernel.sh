@@ -78,6 +78,10 @@ Special Renesas command options:
 
 Example build:
   $ ./build.sh k defconfig
+  $ ./build.sh k dtbs
+  $ ./build.sh k menuconfig
+  $ ./build.sh k clean
+  $ ./build.sh k distclean
   $ ./build.sh k all
   $ ./build.sh k deploy"
   exit
