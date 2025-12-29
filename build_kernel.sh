@@ -21,6 +21,10 @@ fi
 # Read our settings (board.ini) or whatever file SETTINGS_FILE was set to
 read_setting
 
+if [ ! -d "renesas-rz-linux" ]; then
+  git clone https://github.com/OneKiwiTech/renesas-rz-linux.git
+fi
+
 # Identify the BSP type
 BSP_TYPE=""
 if [ "$MACHINE" == "hihope-rzg2m" ]   ; then BSP_TYPE="RZG2" ; DTB="multiple" ; fi

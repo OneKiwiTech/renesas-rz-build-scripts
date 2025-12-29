@@ -27,6 +27,9 @@ fi
 # Read our settings (board.ini) or whatever file SETTINGS_FILE was set to
 read_setting
 
+if [ ! -d "renesas-rz-uboot" ]; then
+  git clone https://github.com/OneKiwiTech/renesas-rz-uboot.git
+fi
 # For most eval boards, the defconfig is the same name as the MACHINE name.
 # Check if it was already set in case there was some custom name)
 # smarc-rzg2l_defconfig

@@ -35,6 +35,10 @@ fi
 # Read our settings (board.ini) or whatever file SETTINGS_FILE was set to
 read_setting
 
+if [ ! -d "renesas-rz-tfa" ]; then
+  git clone https://github.com/OneKiwiTech/renesas-rz-tfa.git
+fi
+
 if [ "$MACHINE" == "" ] ; then
   echo "You need to set MACHINE first"
   exit
